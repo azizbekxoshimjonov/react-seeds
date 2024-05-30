@@ -1,0 +1,117 @@
+@import '../../Assets/Style/Style.scss';
+.seeds {
+    width: 1110px;
+    height: 455px;
+    border: 1px solid white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 32px;
+    border-radius: 24px;
+    background-color: $mainGreen;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seeds__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54px;
+    margin-top: 48px;
+    margin-left: 76px;
+}
+
+.seeds__des {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-left: 76px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-left: 78px;
+}
+
+.price__title {
+    margin-left: 8.84px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.price__des {
+    margin-left: 21px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.sed {
+    margin-top: 35px;
+}
+
+.hero__btn1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgb(53, 151, 64);
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    margin-left: 76px;
+}
+
+.hero__btn2 {
+    width: 129px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(53, 151, 64);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 12px;
+    border: none;
+}
+
+.well {
+    width: 1110px;
+    height: 104px;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 12px;
+    background: $manPink;
+}
+
+.well__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.well__des {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 29px;
+}

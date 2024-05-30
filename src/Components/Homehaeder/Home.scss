@@ -1,0 +1,74 @@
+@import '../../Assets/Style/Style.scss';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    box-shadow: 0px 4px 12px 0px rgba(207, 207, 207, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-left: 165px;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-left: 32px;
+    color: $mainGrey;
+}
+
+.insta {
+
+    margin-left: 47px;
+}
+
+.face {
+    margin-left: 6px;
+}
+
+.inp__box {
+    width: 285px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 71px;
+    padding-left: 16px;
+
+    input {
+        margin-left: 10px;
+        border: none;
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 400;
+        outline: none;
+        width: 100%;
+    }
+
+}
+
+.yurak___btn {
+    margin-left: 15px;
+    border: none;
+    background-color: white;
+
+}
+
+.savat {
+    margin-left: 28px;
+}

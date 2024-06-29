@@ -1,4 +1,5 @@
 @import '../../Assets/Style/Style.scss';
+
 .seeds {
     width: 1110px;
     height: 455px;
@@ -40,9 +41,9 @@
     margin-left: 78px;
 }
 
-.price__title {
+.price__title__price {
     margin-left: 8.84px;
-    color: rgb(31, 37, 51);
+    color: black;
     font-family: Lexend;
     font-size: 42px;
     font-weight: 600;
@@ -56,6 +57,7 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 54px;
+    text-decoration: line-through;
 }
 
 .sed {
@@ -114,4 +116,49 @@
     font-weight: 500;
     text-align: center;
     margin-left: 29px;
+}
+
+@media (max-width: 375.11px) {
+    .seeds {
+        width: 345px;
+        height: 663px;
+        display: block;
+    }
+
+    .seeds__title {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -5%;
+        text-align: left;
+        margin-left: 14px;
+        margin-top: 293px;
+    }
+
+    .seeds__des {
+        margin-top: 0;
+        margin-left: 0;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 6px;
+        margin-left: 14px;
+
+    }
+    .sed{
+       margin-top: -3000px;
+
+        width: 188px;
+        height: 188px;
+    }
+    .avatar{
+        display: block;
+        float: top;
+    }
 }

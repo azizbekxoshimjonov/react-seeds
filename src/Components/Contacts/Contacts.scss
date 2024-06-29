@@ -1,0 +1,90 @@
+.what__box {
+    width: 1110px;
+    height: 251px;
+    border-radius: 24px;
+    background: rgb(234, 241, 235);
+    margin: 0 auto;
+    display: block;
+    margin-top: 32px;
+}
+
+.what__title {
+    text-align: center;
+    align-items: center;
+    padding-top: 65px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.what__des {
+    text-align: center;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+.helps__box__grovn__box {
+    margin-top: 57px;
+    display: flex;
+}
+
+.our__stroy {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    gap: 65px;
+}
+
+.stroy__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.stroy__des {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+
+.meet__title {
+    text-align: center;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 125px;
+}
+
+.our__team {
+    display: flex;
+    align-items: center;
+    margin-top: 78px;
+    margin-left: 165px;
+    gap: 30px;
+}
+
+.melek__box {
+    text-align: center;
+
+    p {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+.assistand{
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-left: 260.5px;
+    justify-content: space-around;
+}

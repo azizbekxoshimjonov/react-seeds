@@ -1,0 +1,232 @@
+.modal__ichi {
+    display: flex;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.modal__img {
+    width: 64px;
+    height: 63px;
+    margin-left: 16px;
+}
+
+.item__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+
+.summa {
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+}
+
+.summ__des {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 90px;
+}
+
+.summa__title {
+    margin-left: 169px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -4%;
+    text-align: left;
+}
+
+.summa__btn {
+    margin-left: 40px;
+    width: 104px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: rgba(53, 151, 64, 0.08);
+}
+
+.modal__chiz {
+    margin: 0 auto;
+    display: block;
+    margin-top: 19px;
+}
+
+.clear__btn {
+    width: 100px;
+    height: 47px;
+    padding: 11px 33px 11px 33px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(53, 151, 64);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 178.19%;
+    letter-spacing: -3.5%;
+    text-align: left;
+    border: 1px solid white;
+}
+
+.modal__btn__pay {
+    width: 193px;
+    height: 47px;
+    border-radius: 8px;
+    background: rgb(53, 151, 64);
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.modal__bts {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 23px;
+}
+
+.no__lov__prod {
+    text-align: center;
+    align-items: center;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.minus__btn {
+    margin-left: 14px;
+    border: none;
+    font-size: 25px;
+    color: green;
+    background-color: transparent;
+}
+
+.title__btn__btn {
+    margin-left: 15px;
+    color: rgb(53, 151, 64);
+    font-family: Lexend;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: rgba(53, 151, 64, 0.08);
+}
+
+.pilus__btn {
+    margin-left: 8px;
+    border: none;
+    font-size: 25px;
+    color: green;
+    background-color: transparent;
+
+}
+
+.search__inp {
+    width: 825px;
+    height: 64px;
+    margin-top: 32px;
+    margin-left: 165px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 71px;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-left: 30px;
+    }
+
+    input {
+        width: 100%;
+        margin-left: 20px;
+        border: none;
+        outline: none;
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 178.19%;
+        letter-spacing: -3.5%;
+        text-align: left;
+
+    }
+}
+
+.html__btn__btn {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+
+    h1 {
+        margin-left: 20px;
+    }
+}
+.savat__btn2 {
+    width: 48px;
+    height: 48px;
+    margin-left: 126px;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.activ-button{
+    background-color: green;
+}
+
+.olov {
+    margin-left: 26px;
+}
+
+.bonus {
+    margin-left: 15px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.bonus__darc{
+    display: none   ;
+}
+.bonus__light{
+    display: block;
+}
+.linemod {
+    margin-top: 44px;
+    margin-left: 30px;
+}
+
+.all__herbis {
+    margin-top: 15px;
+    margin-left: 28px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+}
+.modal__btn__pay {
+    text-align: center;
+    padding-top: 15px;
+    list-style-type: none;
+  }
+  
+  .payment__title {
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+  }

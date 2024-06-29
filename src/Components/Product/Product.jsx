@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-// import React from 'react'
+import React, { useContext, useState } from 'react';
 import bac from '../../Assets/Img/bak.png';
 import cart from '../../Assets/Img/cart.png';
 import caram from '../../Assets/Img/caram.png';
@@ -8,74 +7,124 @@ import qulp from '../../Assets/Img/qulp.png';
 import sanchiq from '../../Assets/Img/sanchiq.png';
 import gul from '../../Assets/Img/gul.png';
 import savat from '../../Assets/Img/savatchab.png';
-import './Product.scss'
+import linemodal from '../../Assets/Img/modalline.png'
+import './Product.scss';
+import { Context } from "../../Contex/Context";
 
-import { products as initialProducts } from './Data';
 function Product() {
-    const [filteredProducts, setFilteredProducts] = useState([]);
-    const [category, setCategory] = useState('All');
+    const [modalInfo, setModalInfo] = useState({ text: '', top: 0, left: 0, isVisible: false, id: null });
 
-    const handleCart = (product) => {
+    const {
+        filteredProducts,
+        clearLocalData,
+        handleLove,
+        localData,
+        handleLove2,
+        filterProducts
+    } = useContext(Context);
+
+    const showModal = (text, id, event) => {
+        const buttonRect = event.target.getBoundingClientRect();
+        setModalInfo({
+            text,
+            top: buttonRect.bottom + 15,
+            left: buttonRect.left,
+            isVisible: true,
+            id
+        });
     };
 
-    const filterProducts = (category) => {
-        if (category === 'All') {
-            setFilteredProducts(initialProducts.filter(product => product.category === 'All'));
-        } else {
-            const filtered = initialProducts.filter(product => product.category === category);
-            setFilteredProducts(filtered);
-        }
-        setCategory(category);
+    const hideModal = () => {
+        setModalInfo({ ...modalInfo, isVisible: false, id: null });
     };
 
-    useEffect(() => {
-        filterProducts('All');
-    }, []);
-  return (
-    <div>
-        <section>
+    return (
+        <div>
+            <section>
                 <div className="container">
                     <div className='all__box'>
                         <h1 className='all__title'>Our products.</h1>
-                        <button className='all__btn'>View all (12)</button>
+                        <button className='all__btn' onClick={clearLocalData}>Clear all</button>
                     </div>
-                    <div className='nav__bar'>
-                        <button id='1' onClick={() => filterProducts('All')} className='bar__btn1'>
-                            <img src={bac} alt="All" />
+                    <div className="nav__bar">
+                        <button id="1" onClick={() =>   filterProducts('All')}  className="bar__btn1">
+                            <img onMouseEnter={(e) => showModal('All', 1, e)} onMouseLeave={hideModal} src={bac} alt="All" />
                             ALL
                         </button>
-                        <button onClick={() => filterProducts('BUNDLES')} className='bar__btn2'>
-                            <img src={cart} alt="Bundles" />
+                        <button id="2" onClick={() =>   filterProducts('BUNDLES')}  className="bar__btn2">
+                            <img onMouseEnter={(e) => showModal('BUNDLES', 2, e)} onMouseLeave={hideModal} src={cart} alt="Bundles" />
                             BUNDLES
                         </button>
-                        <button onClick={() => filterProducts('HERBS')} className='bar__btn3'>
-                            <img src={caram} alt="Herbs" />
+                        <button id="3" onClick={() =>   filterProducts('HERBS')} className="bar__btn3">
+                            <img onMouseEnter={(e) => showModal('HERBS', 3, e)} onMouseLeave={hideModal}  src={caram} alt="Herbs" />
                             HERBS
                         </button>
-                        <button onClick={() => filterProducts('VEGETABLES')} className='bar__btn4'>
-                            <img src={tomat} alt="Vegetables" />
+                        <button id="4" onClick={() =>   filterProducts('VEGETABLES')}  className="bar__btn4">
+                            <img onMouseEnter={(e) => showModal('VEGETABLES', 4, e)} onMouseLeave={hideModal} src={tomat} alt="Vegetables" />
                             VEGETABLES
                         </button>
-                        <button onClick={() => filterProducts('FRUITS')} className='bar__btn5'>
-                            <img src={qulp} alt="Fruits" />
+                        <button id="5" onClick={() =>   filterProducts('FRUITS')} className="bar__btn5">
+                            <img  onMouseEnter={(e) => showModal('FRUITS', 5, e)} onMouseLeave={hideModal} src={qulp} alt="Fruits" />
                             FRUITS
                         </button>
-                        <button onClick={() => filterProducts('SUPPLIES')} className='bar__btn6'>
-                            <img src={sanchiq} alt="Supplies" />
+                        <button id="6" onClick={() =>   filterProducts('SUPPLIES')}  className="bar__btn6">
+                            <img onMouseEnter={(e) => showModal('SUPPLIES', 6, e)} onMouseLeave={hideModal} src={sanchiq} alt="Supplies" />
                             SUPPLIES
                         </button>
-                        <button onClick={() => filterProducts('FLOWERS')} className='bar__btn7'>
-                            <img src={gul} alt="Flowers" />
+                        <button id="7" onClick={() =>   filterProducts('FLOWERS')}   className="bar__btn7">
+                            <img onMouseEnter={(e) => showModal('FLOWERS', 7, e)} onMouseLeave={hideModal} src={gul} alt="Flowers" />
                             FLOWERS
                         </button>
                     </div>
+
+                    {modalInfo.isVisible && (
+                        <div id="modal" className="modal__modal" style={{ top: modalInfo.top, left: modalInfo.left }}>
+                            <div className="modal-content">
+                                <p id="modal-text">{modalInfo.text}</p>
+                                <div className='modal__texts'>
+                                    <div className='modal__ich1'>
+                                        <p>Angelica</p>
+                                        <p>Anise</p>
+                                        <p>Anise Hyssop</p>
+                                        <p>Asclepias (Bu</p>
+                                        <p>Basil</p>
+                                        <p>Bee Balm</p>
+                                        <p>Borage</p>
+                                    </div>
+                                    <div className='modal__ich2'>
+                                        <h2>Calendula</h2>
+                                        <h2>Caraway</h2>
+                                        <h2>Catmint</h2>
+                                        <h2>Catnip</h2>
+                                        <h2>Chamomile</h2>
+                                        <h2>Chervil</h2>
+                                    </div>
+                                    <div className='modal__ich3'>
+                                        <p>Calendula</p>
+                                        <p>Caraway</p>
+                                        <p>Catmint</p>
+                                        <p>Catnip</p>
+                                        <p>Chamomile</p>
+                                        <p>Chervil</p>
+                                    </div>
+
+                                </div>
+                                <img className='linemod' src={linemodal} alt="" />
+                                <h3 className='all__herbis'>View all Herbs</h3>
+                                
+                            </div>
+                        </div>
+                    )}
+
                     <div className="products__product">
                         <div className="product">
                             {filteredProducts.map((item) => (
-                                <div key={item.id} className="cart__container" onClick={() => handleCart(item)}>
+                                <div key={item.id} className="cart__container">
                                     <img className='rek__img' src={item.image} alt={item.title} />
                                     <div>
-                                        <button className='yurak__btn2'><i className=" yurakcha bi bi-heart"></i></button>
+                                        <button className='yurak__btn2' onClick={() => handleLove(item)}>
+                                            <i className={`yurakcha bi bi-heart${localData.find((product) => product.id === item.id) ? '-fill' : ''}`}></i>
+                                        </button>
                                     </div>
                                     <div className="stars">
                                         <span className="star">&#9733;</span>
@@ -88,7 +137,7 @@ function Product() {
                                     <h4>{item.title}</h4>
                                     <div className='html__btn'>
                                         <h1>${item.price}</h1>
-                                        <button><img src={savat} alt="" /></button>
+                                        <button className='savat__btn2' onClick={() => handleLove2(item)}><img src={savat} alt="" /></button>
                                     </div>
                                 </div>
                             ))}
@@ -96,9 +145,8 @@ function Product() {
                     </div>
                 </div>
             </section>
-      
-    </div>
-  )
+        </div>
+    );
 }
 
-export default Product
+export default Product;

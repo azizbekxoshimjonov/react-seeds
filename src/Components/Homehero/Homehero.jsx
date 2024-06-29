@@ -16,7 +16,7 @@ function Homehero() {
                                 <p className='seeds__des'>Be sure of our quality - the freshest batches of this season. <br /> Non-GMO, Heirloom - our seeds were tested and have the best <br /> germination ratings. Your easy growing experience is our <br /> guarantee</p>
                                 <div className='price'>
                                     <img src={olov} alt="" />
-                                    <h1 className='price__title'>$12.56</h1>
+                                    <h1 className='price__title__price'>$12.56</h1>
                                     <h3 className='price__des'>$15.56</h3>
                                 </div>
                                 <button className='hero__btn1'>Add to cart</button>

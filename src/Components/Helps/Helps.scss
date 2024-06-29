@@ -1,0 +1,33 @@
+@import '../../Assets/Style/Style.scss';
+.helps__seedra {
+    margin-top: 63px;
+}
+
+.help__title {
+    margin-top: 68px;
+    margin-left: 165px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.help__des {
+    margin-top: 31px;
+    margin-left: 165px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.helps__box {
+    display: flex;
+}
+
+.opa {
+    margin-left: 115px;
+}

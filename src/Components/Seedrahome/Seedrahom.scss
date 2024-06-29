@@ -1,0 +1,294 @@
+.info__title {
+    margin-top: 80px;
+    margin-left: 165px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.list__lists {
+    .list__lists {
+        li {
+            list-style-type: circle;
+        }
+    }
+}
+
+.moves__list {
+    list-style-type: square;
+}
+
+.list__lists {
+    list-style-type: disc;
+    margin-left: 165px;
+    margin-top: 32px;
+
+    li {
+        margin-top: 20px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.lene5 {
+    margin-top: 22px;
+    margin-left: 165px;
+}
+
+.uls__list {
+    display: flex;
+}
+
+.balshoy {
+    width: 475px;
+    height: 198px;
+    margin-top: 32px;
+    margin-left: 65px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
+
+.bir__box {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-top: 24px;
+        margin-left: 24px;
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    h2 {
+        margin-top: 24px;
+        margin-left: 24px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 178.19%;
+        letter-spacing: -3.5%;
+        text-align: right;
+        margin-right: 24px;
+    }
+}
+
+.line6 {
+    margin-top: 17px;
+    margin-left: 24px;
+}
+
+.ikki__box {
+    margin-top: 17px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.asked__title {
+    margin-top: 15px;
+    margin-left: 165px;
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.qosh__btn__btn {
+    width: 730px;
+    height: 81px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    margin-top: 21px;
+    margin-left: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+        margin-left: 29px;
+        margin-bottom: 22px;
+    }
+
+}
+
+.addd__btn {
+    border: none;
+    background-color: white;
+    margin-top: 15px;
+    margin-right: 33px;
+    margin-bottom: 22px;
+}
+
+.minus__btn__btn2 {
+    width: 730px;
+    height: 256px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 165px;
+}
+
+.minus__canthey {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        margin-top: 21px;
+        margin-left: 29px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    button {
+        border: none;
+        background-color: white;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+.line61 {
+    margin-top: 22px;
+    margin-left: 29px;
+}
+
+.ihave {
+    margin-top: 20px;
+    margin-left: 29px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.note__do {
+    width: 730px;
+    height: 81px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        border: none;
+        background-color: white;
+        margin-top: 15px;
+        margin-right: 32px;
+    }
+
+    h3 {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+        margin-left: 29px;
+    }
+
+}
+
+.question {
+    display: flex;
+
+}
+
+.ask__youtype {
+    width: 350px;
+    height: 438px;
+    border-radius: 12px;
+    background: rgb(234, 241, 235);
+    margin-top: 21px;
+    margin-left: 30px;
+
+    h1 {
+        margin-top: 136px;
+        margin-left: 26px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p {
+        margin-top: 6px;
+        margin-left: 26px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.own__box {
+    width: 297px;
+    height: 133px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    margin-top: 17px;
+    margin-left: 26px;
+
+    p {
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
+
+.send__send__btn {
+    width: 104px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgb(53, 151, 64);
+    margin-top: 13px;
+    margin-left: 26px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+}
+.carla__view{
+    display: flex;
+}

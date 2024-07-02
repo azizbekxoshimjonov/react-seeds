@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
 }
-.bar__des__nav23{
+
+.bar__des__nav23 {
     display: flex;
     margin-left: 15px;
     color: rgb(112, 115, 124);
@@ -16,9 +17,10 @@
     margin-left: 165px;
     gap: 15px;
 }
+
 .bar__des__nav2.active {
     color: black;
-  }
+}
 
 .corns {
     width: 445px;
@@ -229,6 +231,7 @@
     border: none;
     margin-top: 19px;
     background-color: white;
+    margin-right: 16px;
 }
 
 .add__btn__to {
@@ -237,25 +240,26 @@
     border-radius: 8px;
     background: rgb(53, 151, 64);
     margin-top: 10px;
-    margin-left: 16px;
+    margin-left: 18px;
     border: none;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: Lexend;
     font-size: 16px;
 }
-.nuqta__input{
+.nuqta__input {
     color: green;
     background-color: green;
 }
- .corns{
+
+.corns {
     width: 445px;
     height: 445px;
     margin-top: 25px;
     margin-left: 165px;
     border-radius: 8px;
- }
- .nuqta__input:checked {
+}
+
+.nuqta__input:checked {
     background-color: green;
     border-color: green;
-  }
-  
+}

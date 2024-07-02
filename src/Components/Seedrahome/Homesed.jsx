@@ -83,7 +83,7 @@ function Homesed() {
                         <h1>Didn’t find answer?</h1>
                         <p>Ask your own!</p>
                         <div className='own__box'>
-                            <p>Type here</p>
+                            <input type="text" placeholder='Type here' />
                         </div>
                         <button className='send__send__btn'>Send</button>
                        

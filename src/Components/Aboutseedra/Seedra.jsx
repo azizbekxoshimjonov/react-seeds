@@ -132,7 +132,7 @@ function Seedra() {
                 <button className='yurak__btn12'><img src={yurak} alt="" /></button>
                 <button className='add__btn__to'>Add to card</button>
             </div>
-        </div>
+        </div>  
     );
 }
 

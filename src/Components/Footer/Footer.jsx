@@ -10,7 +10,7 @@ function Footer() {
     <div>
        
             <section className='footer'>
-                <div className="container">
+                <div className="container  secret__foooter">
                     <nav className='footer__nav'>
                         <ul className='footer__list'>
                             <li className='nav__items' >

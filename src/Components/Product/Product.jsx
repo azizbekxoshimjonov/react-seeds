@@ -42,10 +42,11 @@ function Product() {
         <div>
             <section>
                 <div className="container">
-                    <div className='all__box'>
-                        <h1 className='all__title'>Our products.</h1>
-                        <button className='all__btn' onClick={clearLocalData}>Clear all</button>
+                    <div className="all__box">
+                        <h1>Our products.</h1>
+                        <button>View all (12)</button>
                     </div>
+
                     <div className="nav__bar">
                         <button id="1" onClick={() =>   filterProducts('All')}  className="bar__btn1">
                             <img onMouseEnter={(e) => showModal('All', 1, e)} onMouseLeave={hideModal} src={bac} alt="All" />

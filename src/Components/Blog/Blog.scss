@@ -1,39 +1,49 @@
 @import '../../Assets/Style/Style.scss';
+
 .our__box {
-    margin-top: 89px;
-    margin-left: 165px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 165px;
+
+    h1 {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 54px;
+        letter-spacing: -5%;
+        text-align: left;
+    }
+
+    button {
+        width: 171px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid rgb(239, 239, 239);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        color: rgb(53, 151, 64);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 178.19%;
+        letter-spacing: -3.5%;
+    }
 }
 
-.our__title {
-    color: rgb(31, 37, 51);
-    font-family: Lexend;
-    font-size: 36px;
-    font-weight: 600;
-}
 
-.our__btn2 {
-    width: 168px;
-    height: 50px;
-    box-sizing: border-box;
-    border: 1px solid rgb(239, 239, 239);
-    border-radius: 8px;
-    background: rgb(255, 255, 255);
-    margin-left: 784px;
-    color: rgb(53, 151, 64);
-    font-family: Lexend;
-    font-size: 16px;
-    font-weight: 500;
-}
 
-.our__box1 {
+
+.our__box12 {
     width: 730px;
     height: 300px;
     border-radius: 12px;
     background: $mainGreen;
-    margin-top: 42px;
+    margin-top: 41px;
     margin-left: 165px;
     display: flex;
+
 }
 
 .soat__box {
@@ -309,4 +319,160 @@
 
 .active-button {
     background-color: green;
+}
+
+@media (max-width: 375px) {
+    .our__box {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 48px;
+
+        h1 {
+            margin-top: 38px;
+            position: absolute;
+            width: 89px;
+            height: 34px;
+            left: 15px;
+            right: 271px;
+            top: 1706px;
+            bottom: 2286px;
+            color: rgb(31, 37, 51);
+            font-family: Lexend;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 54px;
+            letter-spacing: -5%;
+            text-align: left;
+        }
+
+        button {
+            position: absolute;
+            width: 158px;
+            height: 47px;
+            left: 200px;
+            top: 1699px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+            align-items: center;
+            padding-left: 33px;
+            margin-left: -11px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .our__box12 {
+        width: 317px;
+        height: 400px;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        margin-top: 32px;
+        margin-left: 11px;
+
+    }
+
+    .kbrg__picture {
+        width: 222px;
+        height: 227px;
+    }
+
+    .our__boxs {
+        display: block;
+        margin: 0;
+
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .our__box3 {
+        display: none;
+    }
+
+    .kbrg__image {
+        width: 222px;
+        height: 227px;
+        margin-top: -80px;
+        margin-left: 126px;
+    }
+
+    .boxs__boxs {
+        margin-left: -165px;
+        display: none;
+    }
+
+    .our__box2 {
+        display: none;
+        margin: 0;
+        margin-left: -165px;
+    }
+
+    .out__title {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 54px;
+        letter-spacing: -5%;
+        text-align: left;
+        margin-left: 11px;
+    }
+
+    .carla__box {
+        width: 318px;
+        height: 344px;
+        overflow: hidden;
+        margin-left: 11px;
+    }
+
+    .carla {
+        img {
+            width: 44px;
+            height: 44px;
+        }
+
+        h1 {
+            color: rgb(31, 37, 51);
+            font-family: Lexend;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: -4%;
+            text-align: left;
+        }
+    }
+
+    #div2 {
+        display: none;
+    }
+
+    #div3 {
+        display: none;
+    }
+
+    .grren__btn1,
+    .grren__btn2,
+    .grren__btn3 {
+        display: none;
+    }
+
+    .carla__des {
+        width: 283px;
+        height: 112px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0%;
+        overflow: hidden;
+    }
+
+
+
 }

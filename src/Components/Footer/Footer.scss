@@ -95,3 +95,29 @@
     font-size: 14px;
     font-weight: 400;
 }
+@media (max-width: 700px){
+    .footer__nav{
+        display: none;
+    }
+    .footer{
+        background-image: url('../../Assets/Img/secret77.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -10px;
+        margin-left: 300px;
+        background-color: transparent;
+    }
+}
+@media (max-width:375px){
+    .footer__nav{
+        display: none;
+    }
+    .footer{
+        background-image: url('../../Assets/Img/secret77.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -10px;
+        margin-left: 50px;
+        background-color: transparent;
+    }
+}

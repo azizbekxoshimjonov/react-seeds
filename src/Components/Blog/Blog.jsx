@@ -20,23 +20,25 @@ function Blog() {
     <div>
       <section className='our__blog'>
         <div className="container">
-          <div className='our__box'>
-            <h1 className='our__title'>Our blog.</h1>
-            <button className='our__btn2'>Go to our blog</button>
+          <div className="our__box">
+            <h1>Our blog.</h1>
+            <button>Go to our blog</button>
           </div>
           <div>
-            <div className='our__box1'>
-              <div className='our__boxs'>
-                <div className='soat__box'>
-                  <img src={soat} alt="" />
-                  <p>12.09.2021</p>
-                </div>
-                <h1 className='box1__title'>How to plant spinach correctly in winter</h1>
-                <p className='box1__des'>In most areas, successive sowing can be done
-                  from early spring until <br /> early winter, but more often during hotter months...</p>
-                <button className='box1__btn'>Read</button>
+            <div className="our__box12">
+              <div>
+              <div className='soat__box'>
+                    <img src={soat} alt="" />
+                    <p>12.09.2021</p>
+                  </div>
+                  <h1 className='box1__title'>How to plant spinach correctly in winter</h1>
+                  <p className='box1__des'>In most areas, successive sowing can be done from early spring until <br /> early winter, but more often during hotter months...</p>
+                  <button className='box1__btn'>Read</button>
               </div>
-              <img src={kbrg} alt="" />
+              <div>
+                <img className='kbrg__image' src={kbrg} alt="" />
+              </div>
+
             </div>
             <div className="content">
               <div className='boxs__boxs'>

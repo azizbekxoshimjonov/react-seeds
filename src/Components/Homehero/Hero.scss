@@ -11,12 +11,35 @@
     background-color: $mainGreen;
 }
 
+.no-webp .seedra__big::after {
+    background: url(../../Assets/Img/hero.png) right bottom/contain no-repeat
+}
+
 .avatar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    @media(max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .seeds__title {
+    position: static;
+    width: 650px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
     color: rgb(31, 37, 51);
     font-family: Lexend;
     font-size: 48px;
@@ -24,9 +47,25 @@
     line-height: 54px;
     margin-top: 48px;
     margin-left: 76px;
+
+    @media(max-width: 650px) {
+        margin: 0;
+    }
 }
 
 .seeds__des {
+    position: static;
+    width: 560px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
     color: rgb(31, 37, 51);
     font-family: Lexend;
     font-size: 16px;
@@ -38,6 +77,7 @@
 .price {
     display: flex;
     align-items: center;
+    margin-top: -20px;
     margin-left: 78px;
 }
 
@@ -74,6 +114,7 @@
     font-size: 16px;
     font-weight: 500;
     border: none;
+    margin-top: 10px;
     margin-left: 76px;
 }
 
@@ -86,6 +127,7 @@
     font-family: Lexend;
     font-size: 16px;
     font-weight: 500;
+    margin-top: 10px;
     margin-left: 12px;
     border: none;
 }
@@ -118,14 +160,20 @@
     margin-left: 29px;
 }
 
-@media (max-width: 375.11px) {
+@media (max-width: 375px) {
     .seeds {
         width: 345px;
         height: 663px;
-        display: block;
     }
 
     .seeds__title {
+        position: absolute;
+        width: 309px;
+        height: 73px;
+        left: 14px;
+        right: 22px;
+        top: 293px;
+        bottom: 297px;
         color: rgb(31, 37, 51);
         font-family: Lexend;
         font-size: 28px;
@@ -133,11 +181,19 @@
         line-height: 36px;
         letter-spacing: -5%;
         text-align: left;
-        margin-left: 14px;
-        margin-top: 293px;
+        padding-top: 100px;
+        padding-left: 14px;
+
     }
 
     .seeds__des {
+        position: absolute;
+        width: 320px;
+        height: 84px;
+        left: 14px;
+        right: 11px;
+        top: 408px;
+        bottom: 171px;
         margin-top: 0;
         margin-left: 0;
         color: rgb(31, 37, 51);
@@ -147,18 +203,57 @@
         line-height: 28px;
         letter-spacing: 0%;
         text-align: left;
-        margin-top: 6px;
-        margin-left: 14px;
+        padding-top: 120px;
+        padding-left: 14px;
 
     }
-    .sed{
-       margin-top: -3000px;
 
+    .price {
+        margin-top: 220px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sed {
         width: 188px;
         height: 188px;
+        display: none;
     }
-    .avatar{
-        display: block;
-        float: top;
+
+    .hero__btn1 {
+        width: 141px;
+        height: 47px;
+
     }
+
+    .buttons__btns {
+        display: flex;
+        align-items: center;
+        margin-top: 299px;
+        margin-right: 71px;
+    }
+
+    .price__title__price {
+        color: crimson;
+        font-size: 32px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 375px) {
+    .avatar {
+        background-image: url('../../Assets/Img/hero.png');
+        background-repeat: no-repeat;
+        background-size: 188px;
+        background-position: 79px 41px;
+
+    }
+    .webp .seedra__big::after {
+        background: url(../../Assets/Img/hero.png) center top/contain no-repeat
+    }
+    .well{
+        width: 345px;
+        height: 178px;
+    }
+
 }

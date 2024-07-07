@@ -53,6 +53,33 @@
     background: rgba(53, 151, 64, 0.08);
 }
 
+.all__box {
+    margin-top: 89px;
+    margin-left: 165px;
+    display: flex;
+}
+
+.all__btn {
+    width: 168px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    margin-left: 784px;
+    color: rgb(53, 151, 64);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.all__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .modal__chiz {
     margin: 0 auto;
     display: block;
@@ -173,6 +200,7 @@
         margin-left: 20px;
     }
 }
+
 .savat__btn2 {
     width: 48px;
     height: 48px;
@@ -183,7 +211,8 @@
     border-radius: 8px;
     cursor: pointer;
 }
-.activ-button{
+
+.activ-button {
     background-color: green;
 }
 
@@ -199,12 +228,15 @@
     font-weight: 500;
     text-decoration: line-through;
 }
-.bonus__darc{
-    display: none   ;
+
+.bonus__darc {
+    display: none;
 }
-.bonus__light{
+
+.bonus__light {
     display: block;
 }
+
 .linemod {
     margin-top: 44px;
     margin-left: 30px;
@@ -218,15 +250,16 @@
     font-size: 16px;
     font-weight: 400;
 }
+
 .modal__btn__pay {
     text-align: center;
     padding-top: 15px;
     list-style-type: none;
-  }
-  
-  .payment__title {
+}
+
+.payment__title {
     color: rgb(255, 255, 255);
     font-family: Lexend;
     font-size: 14px;
     font-weight: 400;
-  }
+}
